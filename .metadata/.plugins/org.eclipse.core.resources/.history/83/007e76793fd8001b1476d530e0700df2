@@ -1,0 +1,6 @@
+package check
+import java.io.*;
+
+public class Hello {
+
+}
