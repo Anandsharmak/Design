@@ -17,7 +17,7 @@ public class GameController {
         return gameManagerService.getStatus();
     }
 
-    public void nextmove(String s, String x, String y) throws IllegalPlayerException {
+    public void nextmove(String s, String x, String y) throws Exception {
         gameManagerService.nextmove(s.charAt(0),x,y);
     }
 

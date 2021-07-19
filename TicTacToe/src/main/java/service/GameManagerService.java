@@ -1,5 +1,6 @@
 package service;
 
+import gameErrors.IllegalMoveException;
 import model.Player;
 import model.Status;
 
@@ -36,21 +37,31 @@ public class GameManagerService {
         if(LastType==type){
             throw new IllegalPlayerException();
         }
-        LastType=type;
+
         int xpos=Integer.parseInt(x);
         int ypos=Integer.parseInt(y);
 
+        if(arr[xpos][ypos]!='_')
+        {
+            try {
+                throw new IllegalMoveException();
+            }catch (Exception e){
+                System.out.println(e);
+                return;
+            }
+        }
+        LastType=type;
         arr[xpos][ypos]=type;
         boolean win=true;
         //check horizontal
         for(int i=0;i<n-1;i++){
             if(arr[xpos][i]!=arr[xpos][i+1]) {
                 win = false;
-            break;
+                break;
             }
         }
         if(setStatus(win,type))
-        return;
+            return;
 
         win=true;
         //check vertical
@@ -61,22 +72,22 @@ public class GameManagerService {
             }
         }
         if(setStatus(win,type))
-        return;
+            return;
 
 
         //check left diagonal
         if(xpos==ypos) {
             win=true;
-        for(int i=0;i<n;i++){
-            if(i+1<n)
-                if (arr[i][i] != arr[i+1][i+1]){
-                    win = false;
-                    break;
-                }
+            for(int i=0;i<n;i++){
+                if(i+1<n)
+                    if (arr[i][i] != arr[i+1][i+1]){
+                        win = false;
+                        break;
+                    }
             }
         }
         if(setStatus(win,type))
-        return;
+            return;
 
 
         //check right diagonal
@@ -90,7 +101,7 @@ public class GameManagerService {
             }
         }
         if(setStatus(win,type))
-        return;
+            return;
 
     }
     public boolean setStatus(boolean win,char type){
@@ -101,7 +112,7 @@ public class GameManagerService {
                 status = Status.OWIN;
             }
         }
-            return win;
+        return win;
     }
     public Status getStatus() {
         return status;

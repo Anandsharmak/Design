@@ -1,4 +1,5 @@
 import controller.GameController;
+import gameErrors.IllegalMoveException;
 import gameErrors.IllegalPlayerException;
 import model.Status;
 import model.Player;
@@ -11,9 +12,9 @@ import java.io.IOException;
 
 public class main {
 
-    public static void main(String args[]) throws IOException, IllegalPlayerException {
+    public static void main(String args[]) throws Exception {
 
-        File file = new File("D:\\Anand\\Github\\Design\\TicTacToe\\src\\main\\java\\testcase.txt");
+        File file = new File("D:\\Anand\\Github\\Design\\TicTacToe\\src\\main\\java\\testcase2.txt");
 
         BufferedReader br = new BufferedReader(new FileReader(file));
 

@@ -11,3 +11,12 @@ x 0 2
 o 2 0
 2 0 x
 # "o wins"
+
+x Gaurav
+o Sagar
+x 2 2
+o 1 3
+x 1 1
+o 1 2
+x 2 2
+o 3 3
