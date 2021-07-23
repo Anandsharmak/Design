@@ -1,29 +1,60 @@
 package model;
 
 import java.util.Date;
+import java.util.List;
 
-enum Status{
-    AVAILABLE    ,
-    UNAVAILABLE
-}
 
 public class BookCopy extends Book {
-    String bookid;
+    String bookCopyid;
     int integerId;
     Status status;
+
+    public BookCopy(Book book) {
+        super(book);
+        status=Status.AVAILABLE;
+    }
+
     int RackNumber;
-    Date BookDate;
+    String BookDate;
+
+    public void setBookCopyid(String bookid) {
+        this.bookCopyid = bookid;
+    }
+
+    public void setIntegerId(int integerId) {
+        this.integerId = integerId;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
+    }
+
+    public void setRackNumber(int rackNumber) {
+        RackNumber = rackNumber;
+    }
+
+    public void setBookDate(String bookDate) {
+        BookDate = bookDate;
+    }
+
+    public String getBookCopyid() {
+        return bookCopyid;
+    }
+
+    public Status getStatus() {
+        return status;
+    }
+
+    public int getRackNumber() {
+        return RackNumber;
+    }
+
+    public String getBookDate() {
+        return BookDate;
+    }
 
     public int getIntegerId() {
         return integerId;
-    }
-
-    public BookCopy(String bookid, int integerId, Status status, int rackNumber, Date bookDate) {
-        this.bookid = bookid;
-        this.integerId = integerId;
-        this.status = status;
-        RackNumber = rackNumber;
-        BookDate = bookDate;
     }
 
 }

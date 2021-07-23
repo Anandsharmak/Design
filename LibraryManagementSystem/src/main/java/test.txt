@@ -1,0 +1,72 @@
+"C:\Program Files\Java\jdk-16.0.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.1.3\lib\idea_rt.jar=64741:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.1.3\bin" -Dfile.encoding=UTF-8 -classpath D:\Anand\Github\Design\LibraryManagementSystem\target\classes main
+0 create_library 10
+Created Library with 10 racks
+1 add_book 1 book1 author1,author2 publisher1 book_copy1,book_copy2,book_copy3
+Added Book to rack: 1
+Added Book to rack: 2
+Added Book to rack: 3
+2 add_book 2 book2 author2,author3 publisher2,publisher3 book_copy4,book_copy5,book_copy6,book_copy7,book_copy8,book_copy9,book_copy10
+Added Book to rack: 4
+Added Book to rack: 5
+Added Book to rack: 6
+Added Book to rack: 7
+Added Book to rack: 8
+Added Book to rack: 9
+Added Book to rack: 10
+3 add_book 3 book3 author2 publisher2 book_copy11,book_copy12,book_copy13
+LibraryException.RackEmpty: Rack not available
+LibraryException.RackEmpty: Rack not available
+LibraryException.RackEmpty: Rack not available
+4 search book_id 1
+5 search book_id 3
+6 search author_id author2
+7 search author_id author3
+8 remove_book_copy book_copy6
+Removed book copy: book_copy6 from rack:6
+9 remove_book_copy book_copy13
+LibraryException.INVALIDBOOKCOPYID: Invalid Book Copy ID
+10 add_book 3 book3 author2 publisher2 book_copy13
+Added Book to rack: 6
+11 search book_id 2
+12 print_borrowed user1
+13 borrow_book 1 user1 2020-12-31
+Added Book to rack: 1
+14 borrow_book 1 user1 2020-12-31
+Added Book to rack: 2
+15 borrow_book 1 user1 2020-12-31
+Added Book to rack: 3
+16 borrow_book 1 user1 2020-12-31
+LibraryException.BOOK_UNAVILABLE: Not available
+17 search book_id 1
+18 search author_id author1
+19 borrow_book 4 user1 2020-12-31
+LibraryException.INVALIDBOOKCOPYID: Invalid Book Copy ID
+20 borrow_book 2 user1 2020-12-31
+Added Book to rack: 4
+21 borrow_book 2 user1 2020-12-31
+Added Book to rack: 5
+22 borrow_book 2 user1 2020-12-31
+LibraryException.INVALIDBOOKCOPYID: Invalid Book Copy ID
+23 print_borrowed user1
+book_copy5 2020-12-31
+book_copy4 2020-12-31
+book_copy3 2020-12-31
+book_copy2 2020-12-31
+book_copy1 2020-12-31
+
+24 return_book_copy book_copy1
+25 return_book_copy book_copy2
+26 borrow_book_copy book_copy1
+27 borrow_book_copy book_copy1
+28 borrow_book_copy book_copy2
+29 borrow_book_copy book_copy10
+30 print_borrowed user1
+book_copy5 2020-12-31
+book_copy4 2020-12-31
+book_copy3 2020-12-31
+book_copy2 2020-12-31
+book_copy1 2020-12-31
+
+31 exit
+
+Process finished with exit code 0

@@ -5,21 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fa70427-79ad-46f6-addd-e549af66f9ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/BookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/Constant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/LibraryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/SearchController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/BookCopy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/BookBorrowedService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/BookCopyManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/LibraryManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/RackManagerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/SearchManagerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/bookitem.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryException/BOOK_UNAVILABLE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryException/INVALIDBOOKCOPYID.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryException/RackEmpty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/logs.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/LibraryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/LibraryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/BookCopy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/BookCopy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/BookBorrowedService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/BookBorrowedService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/BookCopyManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/BookCopyManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/RackManagerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/RackManagerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../chess-low-level-system-design" beforeDir="false" afterPath="$PROJECT_DIR$/../chess-low-level-system-design" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,11 +32,20 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1vdFm9RjfjETIM1aDrbDcikGgAf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -50,6 +59,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main" />
+      <module name="LibraryManagementSystem" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

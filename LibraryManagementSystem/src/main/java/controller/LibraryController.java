@@ -1,6 +1,7 @@
 package controller;
 
 import service.LibraryManager;
+import service.RackManagerService;
 
 public class LibraryController {
     LibraryManager libraryManager;
@@ -8,8 +9,9 @@ public class LibraryController {
         libraryManager=new LibraryManager();
     }
 
-    public void createLibrary(int id,int rackno){
-        libraryManager.createLibrary(id,rackno);
-        Constant.CurrentLibraryId=id;
+    public void createLibrary(int rackno){
+        //libraryManager.createLibrary(id,rackno);
+        RackManagerService.InitRack(rackno);
+//        Constant.CurrentLibraryId=id;
     }
 }
