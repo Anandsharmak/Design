@@ -7,7 +7,7 @@ import java.util.Iterator;
 import java.util.TreeSet;
 
 public class RackManagerService {
-    static TreeSet<Integer> iDList;
+    static TreeSet<Integer> iDList=new TreeSet<>();
 
 //    public RackManagerService(int n) {
 //        for(int i=1;i<=n;i++){
@@ -18,8 +18,6 @@ public class RackManagerService {
 
 
     public static void InitRack(int n) {
-        if(iDList==null)
-            iDList=new TreeSet<>();
         for(int i=1;i<=n;i++){
             iDList.add(i);
         }

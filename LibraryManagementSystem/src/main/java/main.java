@@ -18,7 +18,7 @@ public class main {
         BookController bookController=new BookController();
         int i=0;
         while ((st = br.readLine()) != null) {
-            System.out.println(i+++" "+st);
+//            System.out.println(i+++" "+st);
             all=st.split(" ");
 
             switch(all[0]){
