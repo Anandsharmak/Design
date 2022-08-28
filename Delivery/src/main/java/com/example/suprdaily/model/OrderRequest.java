@@ -1,5 +1,7 @@
 package com.example.suprdaily.model;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import java.util.Date;
 import java.util.List;
 

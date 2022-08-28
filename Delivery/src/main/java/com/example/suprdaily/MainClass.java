@@ -4,17 +4,22 @@ import com.example.suprdaily.controller.OrderController;
 import com.example.suprdaily.model.Item;
 import com.example.suprdaily.model.ItemRequest;
 import com.example.suprdaily.model.OrderRequest;
-import com.sun.org.apache.xpath.internal.operations.Or;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import javax.ws.rs.ApplicationPath;
-import javax.ws.rs.core.Application;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-@ApplicationPath("/api")
-public class MainClass extends Application {
-    public static void main(String args[]) {
+@SpringBootApplication
+public class MainClass{
+    public static void main(String args[]){
+        SpringApplication.run(MainClass.class, args);
+    }
+
+
+    public static void main1(String args[]) {
         Scanner sc=new Scanner(System.in);
         OrderController orderController=new OrderController();
         while (true) {

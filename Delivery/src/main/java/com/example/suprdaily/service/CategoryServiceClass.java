@@ -2,9 +2,10 @@ package com.example.suprdaily.service;
 
 import com.example.suprdaily.model.ItemRequest;
 import com.example.suprdaily.model.OrderRequest;
+import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
-
+@Service
 public class CategoryServiceClass {
     HashMap<String,Integer> CategoryQuantityMapping;
     public CategoryServiceClass(){
