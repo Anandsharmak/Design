@@ -1,0 +1,34 @@
+Adding more entrances and exits
+Find nearest parking spot(Distributed or non dirstributed)
+Big parking lot(10k-30K)
+Ticket and spot alloted at the entrance
+Parking lot assigned should be from the entrance
+No more vehicle than capacity-30k
+Different types: large , mid ,small
+Toatal payment = no of hours spent
+Cash and credit card accepted
+Monitoring system
+
+
+Allow to be modified for different places.
+
+Actors
+Parking Spot
+
+why need vehicle
+
+Using Enum can voilate open close princliple as
+ adding a new enum will require cahanges in various classes
+You need to classes
+
+Parking spot would be an abstract class as we cannot instantiate it
+
+Strategy:
+Single entrance vs multiple entrance
+
+
+
+
+
+
+

@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fa70427-79ad-46f6-addd-e549af66f9ce" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/RackManagerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/RackManagerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../chess-low-level-system-design" beforeDir="false" afterPath="$PROJECT_DIR$/../chess-low-level-system-design" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
